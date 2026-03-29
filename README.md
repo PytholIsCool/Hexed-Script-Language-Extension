@@ -8,7 +8,7 @@
 
 ## Requirements
 
-VSCode v1.100.0 or newer
+VS Code v1.100.0 or newer
 
 ## Release Notes
 
