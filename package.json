@@ -1,0 +1,54 @@
+{
+  "name": "hexedscript",
+  "displayName": "HexedScriptLanguageExtension",
+  "description": "Language support for HexedScript (.hs)",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "hexedscript",
+        "aliases": [
+          "HexedScript",
+          "hs"
+        ],
+        "extensions": [
+          ".hs"
+        ],
+        "configuration": "./language-configuration.json",
+        "icon": {
+          "light": "./icons/hexedscript-light.svg",
+          "dark": "./icons/hexedscript-dark.svg"
+        }
+      }
+    ],
+    "grammars": [
+      {
+        "language": "hexedscript",
+        "scopeName": "source.hexedscript",
+        "path": "./syntaxes/hexedscript.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "hexedscript",
+        "path": "./snippets/hexedscript.json"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p ./"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "@types/vscode": "^1.100.0",
+    "typescript": "^5.9.3"
+  }
+}

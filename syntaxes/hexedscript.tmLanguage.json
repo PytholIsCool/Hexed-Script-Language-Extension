@@ -1,0 +1,36 @@
+{
+  "scopeName": "source.hexedscript",
+  "patterns": [
+    {
+        "name": "comment.line.double-dash.hexedscript",
+        "match": "--.*$"
+    },
+    {
+      "name": "keyword.control.hexedscript",
+      "match": "#(METADATA|ENDMETADATA|CODE|ENDCODE)"
+    },
+    {
+      "name": "keyword.other.hexedscript",
+      "match": "\\b(CALL|LOOP|ENDLOOP|SLEEP|FOREVER)\\b"
+    },
+    {
+      "name": "string.quoted.double.hexedscript",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.hexedscript",
+          "match": "\\\\."
+        }
+      ]
+    },
+    {
+      "name": "constant.numeric.hexedscript",
+      "match": "\\b\\d+(\\.\\d+)?\\b"
+    },
+    {
+      "name": "variable.other.hexedscript",
+      "match": "^(id|scope)="
+    }
+  ]
+}

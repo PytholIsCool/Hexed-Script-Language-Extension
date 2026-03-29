@@ -1,0 +1,44 @@
+{
+  "Full Script": {
+    "prefix": ["hxscript", "hxs"],
+    "body": [
+      "#METADATA",
+      "id=${1:...}",
+      "scope=${2|ALL,GLOBAL,TARGET,LOCAL,OTHER|}",
+      "#ENDMETADATA",
+      "",
+      "#CODE",
+      "$0",
+      "#ENDCODE"
+    ]
+  },
+  "CALL": {
+    "prefix": ["call", "CALL"],
+    "body": [
+      "CALL \"${1:Object}\" \"${2:Event}\"",
+      "$0"
+    ]
+  },
+  "LOOP": {
+    "prefix": ["loop", "LOOP"],
+    "body": [
+      "LOOP ${1:count}",
+      "$0",
+      "ENDLOOP"
+    ]
+  },
+  "FOREVER": {
+    "prefix": ["forever", "FOREVER"],
+    "body": [
+      "FOREVER",
+      "$0",
+      "ENDLOOP"
+    ]
+  },
+  "SLEEP": {
+    "prefix": ["sleep", "SLEEP"],
+    "body": [
+      "SLEEP ${1:1.0}"
+    ]
+  }
+}
