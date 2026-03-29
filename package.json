@@ -2,7 +2,7 @@
   "name": "hexedscript",
   "displayName": "HexedScriptLanguageExtension",
   "description": "Language support for HexedScript (.hs)",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.100.0"
   },
